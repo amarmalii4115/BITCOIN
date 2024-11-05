@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Title styling */
+h1 {
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Search input and buttons styling */
+#search-input {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: green;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555555;
+}
+
+/* Table styling */
+#crypto-table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#crypto-table thead {
+  background-color: #333333;
+}
+
+#crypto-table th,
+#crypto-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #444444;
+}
+
+#crypto-table th {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#crypto-table td {
+  color: #e0e0e0;
+}
+
+/* Specific styling for positive and negative values */
+#crypto-table td.change-positive {
+  color: #4caf50; /* Green for positive change */
+  font-weight: bold;
+}
+
+#crypto-table td.change-negative {
+  color: #f44336; /* Red for negative change */
+  font-weight: bold;
+}
+
+/* Row hover effect */
+#crypto-table tbody tr:hover {
+  background-color: #2a2a2a;
+}
+
+/* Styling for table data with symbols in uppercase */
+#crypto-table td.symbol {
+  text-transform: uppercase;
+}
